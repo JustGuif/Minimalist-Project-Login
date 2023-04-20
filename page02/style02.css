@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@700&family=Open+Sans:wght@600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    color: #dad5d2;
+    font-family: 'Open Sans', sans-serif;
+}
+.main-register{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1b1f27;
+}
+.left-register{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left-register h1{
+    font-size: 35pt;
+    color: #f3e51d;
+}
+.register-left-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65vh;
+}
+.right-register{
+    width: 55vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-register{
+    width: 50%;
+    height: 54rem;
+    background: #091c25;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 35px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px #08080a;
+}
+.register-fieldtext{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 0px;
+}
+.register-fieldtext h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17pt;
+    color: #afafaf;
+}
+.register-fieldtext-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vw;
+    margin-bottom: 0;
+}
+.register-fieldtext label{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: -14px;
+    margin-top: 10px;
+    color: white;
+}
+.register-fieldtext input{
+    width: 100%;
+    align-items: flex-start;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 12pt;
+    background-color:#112432;
+    color: gray;
+    box-shadow: 0px 5px 20px #08080a
+}
+.register-fieldtext input:hover{
+    box-shadow: 0px 0px 4px #fbff00;
+}
+.register-fieldtext input::placeholder{
+    color: #5e7783
+}
+.btn{
+    margin-top: 20px;
+}
+.register-btn{
+    padding: 13px 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 7px;
+    background:#0e2c3a;
+    border: none;
+    outline: none;
+    background-color: #648494;
+    color: #091c25;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.register-btn a{
+    outline: none;
+    text-decoration: none;
+    color: #0e2c3a;
+}
+.register-btn:hover{
+    background-color: #fbff00;
+    box-shadow: 0px 1px 7px #fbff00;
+}
+.login-account{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 9pt;
+    font-weight: 500;
+}
+.login-account a{
+    margin-top: 2px;
+    color: #648494;
+    transition: all 0.3s linear;
+}
+.login-account a:hover{
+    color: #f3e51d;
+}
+@media only screen and (max-width: 950px){
+
+    .card-register{
+        width: 85%;
+    }
+    
+}
+@media only screen and (max-width: 600px){
+
+    .main-register{
+        flex-direction: column;
+    }
+    .left-register h1{
+        display: none;
+    }
+    .register-left-image{
+        width: 0vw;
+    }
+    .left-register{
+        width: 100%;
+        height: auto;
+    }
+    .right-register{
+        width: 100%;
+        height: auto;
+    }
+
+    .register-btn{
+        padding: 13px 40px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border-radius: 7px;
+        background:#0e2c3a;
+        border: none;
+        outline: none;
+        background-color: #648494;
+        color: #091c25;
+        font-weight: 800;
+        cursor: pointer;
+        background-color: #fbff00;
+        box-shadow: 0px 1px 7px #fbff00;
+    }
+    .register-fieldtext-image{
+        width: 7vh
+    }
+    
+}
